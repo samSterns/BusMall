@@ -1,39 +1,7 @@
-export class productArray {
-    constructor(product) {
-        this.product = product.slice();
-    }
+import { productData } from './api.js';
+import { productArray } from './product-array.js';
 
-    getProduct() {
-        return this.product;
-    }
-
-    removeProductById(someId) {
-        this.product.forEach(product =>{
-            if (someId === product.id) {
-                this.product.spilce(someId, 1);
-            }
-        });
-    }
-
-    getProductById(someId) {
-        let productSelection;
-
-        this.product.forEach(product => {
-            if (someId === product.id) {
-                productSelection = product;
-            }
-        });
-
-        return productSelection;
-    }
-
-    hasAnyProduct() {
-        return this.product.length;
-    }
-
-    getRandomProduct() {
-        const randomProductIndex = Math.floor(Math.random() * this.product.length);
-
-        return this.product[randomProductIndex]
-    }
-}
+const productImageTags = document.querySelectorAll('img');
+const productRadioTags = document.querySelectorAll('input');
+const productName= document.getElementById('tree-name');
+const product = new ProductArray(productData);

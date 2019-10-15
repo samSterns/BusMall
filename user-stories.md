@@ -8,15 +8,3 @@ Focus Group Participants
     - Ed is a houseless person who is participating in the research to get the small compensation, but also rides the bus a lot. 
     - Mildred is a retired and sick of all the junk mail she gets, so she is excited about this BusMall to be an easy-to-use-alternative to catalogs. 
 
-*) 
-3 pages:
- *choice
- *user results
- *research data
-
- **) 
- number of clicks 
- number of times each image is chosen
- 
- ***) Variable names  
-  - 
