@@ -22,4 +22,3 @@
     - dynamically renderd table 
 
 design sketch out in notebook for the 3 pages and some css choices 
-
