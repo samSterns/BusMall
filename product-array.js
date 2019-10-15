@@ -1,4 +1,4 @@
-export class productArray {
+export class ProductArray {
     constructor(product) {
         this.product = product.slice();
     }
@@ -34,6 +34,6 @@ export class productArray {
     getRandomProduct() {
         const randomProductIndex = Math.floor(Math.random() * this.product.length);
 
-        return this.product[randomProductIndex]
+        return this.product[randomProductIndex];
     }
 }
