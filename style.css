@@ -1,0 +1,23 @@
+* {
+    max-width: 1400px;
+    max-height: 900px;
+}
+
+img {
+    display: inline;
+}
+
+.optionImg {
+    width: 250px;
+    height: 275px;
+}
+
+.choice {
+    display:inline;
+}
+[type=radio] {
+    display:none;
+}
+input:checked + .optionImg {
+    border: 10px solid blue;
+}

@@ -86,7 +86,7 @@ export const productData = [
     {
         id: 'sweep',
         name: 'sweep',
-        image: './assets/sweep.jpg',
+        image: './assets/sweep.png',
         description: 'make your baby do some work'
     },
     {
@@ -104,7 +104,7 @@ export const productData = [
     {
         id: 'usb',
         name: 'usb',
-        image: './assets/usb.jpg',
+        image: './assets/usb.gif',
         description: 'the cracken'
     },
     {

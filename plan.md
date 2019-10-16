@@ -1,7 +1,7 @@
 *) 
 2 pages:
  *choices -- at the end of 25 disable buttons AND have link to resuts page
- *research data
+ *research data - have a play again button
 
  **) 
  number of clicks userNumberOfClick
@@ -25,4 +25,11 @@
     - the previous 3 images (so not to repeat)
     - dynamically renderd table 
 
-design sketch out in notebook for the 2 pages and some css choices 
+design sketched out in notebook for the 2 pages and some css choices 
+---Tasks------
+1- render images CHECK but still need to get rid of buble and add border
+2- no repeats
+3- track data for one game and over multiple games 
+4- render results with that data
+5- add play again/reset button 
+6- (create new branch that is branched off a branch)add chart to html, eslint (in global "chart: true"), and app js

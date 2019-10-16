@@ -1,3 +1,5 @@
+import { getRandomInt } from './utils/utils.js';
+
 export class ProductArray {
     constructor(product) {
         this.product = product.slice();
@@ -32,8 +34,7 @@ export class ProductArray {
     }
 
     getRandomProduct() {
-        const randomProductIndex = Math.floor(Math.random() * this.product.length);
-
+        const randomProductIndex = getRandomInt();
         return this.product[randomProductIndex];
     }
 }
