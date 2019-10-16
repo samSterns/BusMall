@@ -3,11 +3,9 @@ import { ProductArray } from './product-array.js';
 
 const productImageTags = document.querySelectorAll('img');
 const productRadioTags = document.querySelectorAll('input');
-const productName = document.getElementById('product-name');
+// const productName = document.getElementById('product-name');
 const product = new ProductArray(productData);
-const radioButton = document.getElementById('radio-button');
-
-console.log(product);
+// const radioButton = document.getElementById('radio-button');
 
 const initializeNewSetOfProducts = () => {
     const randomProductOne = product.getRandomProduct();
@@ -34,19 +32,16 @@ const initializeNewSetOfProducts = () => {
 
     productRadioTags.forEach((radioTag, i) => {
         if (i === 1) {
-            radioButton.value = randomProductOne.id;
+            radioTag.value = randomProductOne.id;
         } else if (i === 0) {
-            radioButton.value = randomProductTwo.id;
+            radioTag.value = randomProductTwo.id;
         } else {
-            radioButton.value = randomProductThree.id;
+            radioTag.value = randomProductThree.id;
         }
     });
 };
 
 initializeNewSetOfProducts();
-
-
-
 
 // //to disable button
 // // if (totalProductsClicked <= 25) {
