@@ -51,17 +51,6 @@ const initializeNewSetOfProducts = () => {
     while (randomProductTwo.id === randomProductThree.id || randomProductOne.id === randomProductThree.id) {
         randomProductThree = product.getRandomProduct();
     }
-
-    productRadioTags.forEach((radioTag, i) => {
-        if (i === 1) {
-            radioTag.value = randomProductOne.id;
-        } else if (i === 0) {
-            radioTag.value = randomProductTwo.id;
-        } else { 
-            radioTag.value = randomProductThree.id;
-        }
-    });
-
     productImageTags.forEach((imageTag, i) => {
         if (i === 1) {
             imageTag.src = randomProductOne.image;
@@ -72,6 +61,16 @@ const initializeNewSetOfProducts = () => {
         } else {
             imageTag.src = randomProductThree.image;
             incrementShown(randomProductThree.id);
+        }
+    });
+    
+    productRadioTags.forEach((radioTag, i) => {
+        if (i === 1) {
+            radioTag.value = randomProductOne.id;
+        } else if (i === 0) {
+            radioTag.value = randomProductTwo.id;
+        } else { 
+            radioTag.value = randomProductThree.id;
         }
     });
 };
