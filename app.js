@@ -82,8 +82,8 @@ let votesRemaining = 25;
 
 function displayResults() {
     document.getElementById('choices').remove();
-    localStorage.getItem()
-
+    const displayEndPicks = localStorage.getItem('userPicksArray');
+    results.innerText = JSON.stringify(displayEndPicks);
 }
 
 productRadioTags.forEach((radioTag) => {
