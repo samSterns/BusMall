@@ -4,9 +4,7 @@ import { findById } from './utils/utils.js';
 
 const productImageTags = document.querySelectorAll('img');
 const productRadioTags = document.querySelectorAll('input');
-// const productName = document.getElementById('product-name');
 const product = new ProductArray(productData);
-const radioButton = document.getElementById('radio-button');
 const results = document.getElementById('research-results');
 const userPicksArray = [];
 const trackedViewsArray = [];
@@ -99,41 +97,3 @@ productRadioTags.forEach((radioTag) => {
         initializeNewSetOfProducts();
     });
 });
-
-// productRadioTags.forEach((radioTag, i) => {
-
-//     if (i === 1) {
-//         radioTag.value = randomProductOne.id;
-//     } else if (i === 0) {
-//         radioTag.value = randomProductTwo.id;
-//     } else {
-//         radioTag.value = randomProductThree.id;
-//     }
-//     radioTag.addEventListener('click', (event) => {
-//         let found = false; 
-//         clickedArray.forEach(clickedItem => {
-//             if (clickedItem.id === radioTag.value) {
-//                 found = true;
-//                 clickedItem.clicks += 1;
-//             }
-//         });
-//         if (!found) {
-//             clickedArray.push({
-//                 id: radioTag.value, clicks: 1
-//             });
-//         }
-//         console.log(clickedArray);
-//     });
-// });
-
-
-// initializeNewSetOfProducts();
-
-// const clickedAndShown = [];
-
-// abstact to a function // 
-// //to disable button
-// // if (totalProductsClicked <= 25) {
-// //     radioButton.disabled = true;
-// //     window.location = '../research-results';
-// // }
