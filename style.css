@@ -22,3 +22,8 @@
 input:checked + .optionImg {
     border: 10px solid rgb(89, 89, 185);
 }
+
+canvas {
+    width: 75%;
+    height: 500px;
+  }
