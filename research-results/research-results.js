@@ -1,6 +1,6 @@
 import { findById } from '../utils/utils.js';
 
-const parsedViewsArray = JSON.parse(localStorage.trackedArray);
+const parsedViewsArray = JSON.parse(localStorage.trackedViewsArray);
 const parsedUserPicksArray = JSON.parse(localStorage.userPicksArray);
 function mergeArrays(viewsArray, clicksArray) {
     const returnMergedArray = [];
@@ -42,19 +42,19 @@ const labels = convertLabelsArray(tripleThreatArray);
 const data = convertViewsArray(tripleThreatArray);
 const clicks = convertClicksArray(tripleThreatArray);
 
-const Chart = new Chart(ctx, {
+const myChart = new Chart(ctx, {
     type: 'bar',
     data: {
         labels: labels,
         datasets: [{
             label: 'Times Displayed',
             data: data,
-            backgroundColor: 'white'
+            backgroundColor: 'purple'
         },
         {
             label: 'Times Clicked',
             data: clicks,
-            backgroundColor: '#E6342F'
+            backgroundColor: 'blue'
         }
         ]
     },
@@ -68,3 +68,4 @@ const Chart = new Chart(ctx, {
         }
     }
 });
+myChart.data.datasets[0].data = [100, 200, 300, 50, 10];
