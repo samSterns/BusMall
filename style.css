@@ -1,0 +1,29 @@
+* {
+    max-width: 1400px;
+    max-height: 900px;
+    background-color: antiquewhite;
+}
+
+.optionImg {
+    width: 250px;
+    height: 275px;
+}
+
+#choice-container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+[type=radio] {
+    display:none;
+}
+
+input:checked + .optionImg {
+    border: 10px solid rgb(89, 89, 185);
+}
+
+canvas {
+    width: 75%;
+    height: 500px;
+  }
